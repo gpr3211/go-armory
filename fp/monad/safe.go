@@ -2,7 +2,7 @@ package monad
 
 import "strconv"
 
-// Safe map access
+// GetFromMap safe map access.
 func GetFromMap[K comparable, V any](m map[K]V, key K) Maybe[V] {
 	if value, ok := m[key]; ok {
 		return Just(value)

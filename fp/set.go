@@ -1,7 +1,6 @@
 package fp
 
-// Set function that works with any slice (basic types or structs)
-// returns nil on empty input.
+// Set returns only the unique elements from a slice.
 func Set[T comparable](slice []T) []T {
 	uniqueMap := make(map[T]bool)
 	var uniqueSlice []T
