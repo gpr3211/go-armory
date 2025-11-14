@@ -17,7 +17,7 @@ func Map[A any](input []A, m MapFunc[A]) ([]A, error) {
 // - input slice of any type
 // - func(A) []A to be applied to each element
 func FlatMap[A any](input []A, m func(A) []A) []A {
-	output := []A{}
+	output := make([]A, len(input))
 	for _, element := range input {
 		newlemenets := m(element)
 		output = append(output, newlemenets...)

@@ -14,14 +14,14 @@ func Set[T comparable](slice []T) []T {
 }
 
 // Union takes 2 sets of comparable types and returns their union.
-// returns nil else
+// returns nil else.
 func Union[T comparable](set1, set2 []T) []T {
 	combined := append(set1, set2...)
 	return Set(combined)
 }
 
 // Intersection returns a slice containing the intersection of two slices.
-// returns nil if there is no intersection between set1 and set2
+// returns nil if there is no intersection between set1 and set2.
 func Intersection[T comparable](set1, set2 []T) []T {
 	uniqueMap := make(map[T]bool)
 	for _, item := range set1 {
@@ -37,7 +37,7 @@ func Intersection[T comparable](set1, set2 []T) []T {
 }
 
 // Difference returns a slice containing elements in set1 but not in set2.
-// returns nil if sets are equal
+// returns nil if sets are equal.
 func Difference[T comparable](set1, set2 []T) []T {
 	uniqueMap := make(map[T]bool)
 	for _, item := range set2 {
