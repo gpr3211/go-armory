@@ -5,7 +5,7 @@ import (
 	"os"
 )
 
-// Example 1: Basic Future Creation and Getting Results
+// Example 0: Basic Future Creation and Getting Results.
 func main() {
 	os.Exit(future.Start())
 }

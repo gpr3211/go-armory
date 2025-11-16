@@ -16,5 +16,7 @@ func main() {
 	case "0":
 		future.Start()
 	}
+	//TODO:
+	// extend ? Could be nice to have all examples run from a single place.
 
 }
